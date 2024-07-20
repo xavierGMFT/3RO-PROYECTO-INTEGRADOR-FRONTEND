@@ -1,0 +1,31 @@
+<div class="col-xs-1 col-sm-6 col-md-6 col-lg-4 inicio">
+  <div class="d-flex justify-content-center">
+    <img src="./assets/img/icons/logoshop.png" alt="login-icon" style="height: 7rem" />
+</div>
+  <form class="formulario shadow" #f="ngForm" novalidate (ngSubmit)="onRegister()" >
+    <div class="tituloI titulo text-center">Registrase</div>
+      <div class="form-group">
+          <label class="texto">Usuario</label>
+              <input type="text" class="form-control" name="nombreUsuario" id="nombreUsuario" autocomplete="off"
+              required [(ngModel)]="nombreUsuario" placeholder="Usuario/Email">
+      </div>
+      <div class="form-group">
+        <label class="email">Email</label>
+            <input type="email" class="form-control" name="email" id="email" autocomplete="off"
+            required [(ngModel)]="email" placeholder="Email">
+    </div>
+
+      <div class="form-group">
+          <label class="texto" for="exampleInputPassword1">Contraseña</label>
+          <input type="password" class="form-control" name="password" id="password" required
+          [(ngModel)]="password" placeholder="Password">
+        </div>
+      <div class="text-center">
+          <button type="submit" [disabled]="!f.valid" class="entrar texto btn">
+              <a style="color: aliceblue;">Entrar</a>
+          </button>
+          <a class="linkrecordar">¿Ya tienes una cuenta?</a>
+          <a href="/pages/login" class="texto btnCrearCuenta btn">Iniciar Sesion</a>
+      </div>
+  </form>
+</div>

@@ -1,0 +1,48 @@
+<main>
+  <div class="container" *ngIf="!listaVacia">
+    <div class="row">
+      <div class="col-12">
+        <h2>Usuarios</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <table class="table">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Usuario</th>
+              <th scope="col">Email</th>
+              <th scope="col" *ngIf="isAdmin">Borrar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let auth of usuario">
+              <td>{{auth.id}}</td>
+              <td>{{auth.nombreUsuario}}</td>
+              <td>{{auth.email}}</td>
+              <td *ngIf="isAdmin">
+                <button class="btn btn-outline-danger btn-sm" (click)="auth.id !== undefined ? borrar(auth.id) : null">
+                  <i class="far fa-trash-alt d-none d-md-inline"></i>
+                  <span class="d-md-none">Eliminar</span>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="container" *ngIf="listaVacia">
+    <div class="row">
+      <div class="col-12">
+        <button class="btn btn-outline-primary btn-sm" routerLink="/dashboard/cita-nueva"><i class="fas fa-plus"></i>Nueva</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="p-3 mb-2 text-center"><h2>{{listaVacia}}</h2></div>
+      </div>
+    </div>
+  </div>
+</main>

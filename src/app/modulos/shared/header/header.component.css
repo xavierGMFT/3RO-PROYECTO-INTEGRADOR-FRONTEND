@@ -1,0 +1,65 @@
+/* ---------------------------------------- NAVBAR ---------------------------------------- */
+.imagen-navbar{
+  object-fit: cover;
+  object-position: center;
+}
+
+.collapse {
+  justify-content: right;
+}
+
+.container  ul li a {
+  /* color: #bb9569; el primero*/
+  /* color: #bda182; */
+  /* color: #bda284; */
+  color: #080808;
+  font-family: 'Josefin Sans';
+  font-size: 18px;
+  justify-content: right;
+}
+
+.btn-nav-pie{
+  border-color: #b9a38a;
+  color: #b9a38a;
+  margin-left: 10px;
+}
+
+.btn-nav-pie:hover {
+  /* background-color: #000000; */
+  /* background-color: #012c2e; verde oscuro */
+  /* background-color: #23666A; verde clarito */
+  /* background-color: #865f31f5; cafe */
+  /* transition: 20ms; */
+  border-radius: 15%;
+  background-color: #012c2e;
+  filter: invert(1);
+  transition: 0.5s;
+}
+
+.cart{
+  position: relative;
+  color: #b9a38a;
+  font-size: 27px;
+  padding: 5px;
+  border-radius: 4px;
+
+
+}
+
+.cartAmount{
+  position: absolute;
+  top: -1px;
+  right: -6px;
+  font-size: 11px;
+  background-color: #b9a38a;
+  color: #012c2e;
+  padding: 3px;
+  border-radius: 3px;
+
+}
+
+a:link, a:visited,  a:hover, a:active
+{
+  color: #b9a38a
+
+}

@@ -1,0 +1,76 @@
+footer {
+  position: static;
+  width: 100%;
+  left: 0;
+  bottom: -10;
+  padding: 2rem 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Josefin Sans';
+}
+
+.iconos-redes-sociales-container,
+.pie-de-pagina-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: -0.10cm;
+}
+
+.redes-iconos {
+  height: 45px;
+  width: 45px;
+  border-radius: 50px;
+  border: 1px inset rgb(8, 8, 8);
+  background-image: url(../../../../assets/img/icons/facebook.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+
+
+.redes-iconos:hover {
+  background-color: rgb(18, 19, 19);
+  border-radius: 15%;
+  filter: invert(1);
+  transition: 0.5s;
+}
+
+.redes-iconos:nth-of-type(2) {
+  background-image: url(../../../../assets/img/icons/instagram.png);
+}
+
+.redes-iconos:nth-of-type(3) {
+  background-image: url(../../../../assets/img/icons/Whatsapp.png);
+}
+
+.redes-iconos:nth-of-type(4) {
+  background-image: url(../../../../assets/img/icons/phone.png);
+}
+
+.item-menu {
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  list-style-type: none;
+  font-size: 15px;
+  opacity: 0.6;
+  color: rgb(8, 8, 8);
+}
+
+.item.hover {
+  opacity: 1;
+}
+
+.copyright {
+  color: rgb(8, 8, 8);
+  opacity: 0.3;
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+}

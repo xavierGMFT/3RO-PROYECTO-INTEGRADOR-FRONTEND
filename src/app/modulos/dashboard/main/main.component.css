@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bienvenida {
+  font-size: 1.2rem;
+  padding: 10px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  animation: fadeIn 1s ease-in-out;
+}

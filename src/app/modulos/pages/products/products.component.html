@@ -1,0 +1,33 @@
+<section class="section product" aria-label="product">
+  <div class="container">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">
+          <span class="fas fa-search"></span>
+        </span>
+      </div>
+      <input type="text" class="form-control" placeholder="Buscar productos..." [(ngModel)]="searchTerm" (input)="searchProducts()">
+    </div>
+    <div class="row mt-4">
+  <div class="col-md-4 mb-3" *ngFor="let product of filteredProducts">
+    <div class="product-card text-center">
+      <div class="card-banner">
+        <figure class="product-banner img-holder" style="--width: 400; --height: 400;">
+          <img [routerLink]="'/pages/product/' + product.id" [src]="product.imagen" width="350" height="400" class="img-cover">
+        </figure>
+      </div>
+      <div class="card-content">
+        <h3 class="h4 title">
+          <a [routerLink]="'/pages/product/' + product.id" class="card-title">{{ product.titulo | uppercase}}</a>
+        </h3>
+        <span class="price">Precio: {{ product.precio | currency }}</span>
+        <button (click)="addToCart(product)" class="btn product-btn">
+          <span class="fas fa-shopping-bag" aria-hidden="true"></span>
+          <span class="span">Agregar al carrito</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>

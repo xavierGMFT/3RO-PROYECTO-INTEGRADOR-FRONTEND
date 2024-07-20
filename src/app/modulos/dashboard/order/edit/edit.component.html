@@ -1,0 +1,61 @@
+<div class="container-fluid mt-3 mb-4 d-flex justify-content-center aling-items-center">
+  <form class="bg-white p-5 rounded-5 text-secondary shadow" style="width: 70%;">
+    <h1 class="text-center fs-1 fw-bold">Cotizacio Editar</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="fecha">Fecha</label>
+          <input type="date" class="form-control" id="fecha" name="fecha" required autocomplete="off"
+          [(ngModel)]="orderEdit.date" [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="col-md-12">
+
+          <h4>Productos Seleccionados:</h4>
+          <ul class="list-group">
+            <li class="list-group-item" *ngFor="let product of orderEdit.products; let i = index">
+              {{ getProductById(product.id)?.nombre }} - Cantidad: {{ product.quantity }}
+              <button class="btn btn-danger btn-sm" (click)="removeProduct(i)">Eliminar</button>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3 class="mb-4">Productos</h3>
+        <div class="form-group">
+          <label for="product">Selecciona un producto:</label>
+          <select class="form-control" id="product" required [(ngModel)]="selectedProductId" [ngModelOptions]="{standalone: true}">
+            <option *ngFor="let product of productos" [value]="product.id">{{ product.nombre }}</option>
+          </select>
+          <div class="invalid-feedback">
+            Debes seleccionar un producto.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="quantity">Cantidad:</label>
+          <input type="number" class="form-control" id="quantity" [(ngModel)]="selectedQuantity" [ngModelOptions]="{standalone: true}" required />
+          <div class="invalid-feedback">
+            La cantidad es requerida.
+          </div>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary" (click)="addOrUpdateProduct()">Agregar Producto</button>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <button type="submit" class="btn btn-outline-info btn-block" (click)="submitOrder()" [disabled]="!orderEdit.products.length">
+          Cotizar
+        </button>
+      </div>
+      <div class="col-md-6">
+        <button routerLink="/dashboard/order" class="btn btn-outline-dark btn-block">
+          Volver
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+
+

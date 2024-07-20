@@ -1,0 +1,157 @@
+<div class="contacto fuente-texto ">
+  <div class="container mt-3">
+      <div class="row row-cols-1 row-cols-md-1 row-cols-xl-1">
+          <!-- DATOS DE CONTACTO -->
+          <div class="col-mb-4 mt-4">
+              <div class="text-center">
+                  <h2 class="fuente-titulo"> Contáctanos </h2>
+                  <h4 class="fuente-texto"> CotyStyle Coorporativo Ecuador S.A. de C.V. </h4>
+                  <br>
+                  <h5>¡Cuéntanos tu idea y nosotros la hacemos realidad!</h5>
+                  <br>
+              </div>
+          </div>
+          <!-- FORMULARIO -->
+
+          <div class="container formulario-contacto">
+              <form class="needs-validation  mt-3" novalidate>
+                  <div class="form-group">
+                      <label for="nombreContacto">Nombre o Razón Social:</label>
+                      <input type="text" class="form-control" id="nombreContacto"
+                          placeholder="Nombre o Razón Social" required>
+                      <div class="invalid-feedback">
+                          Por favor, ingrese nombre o razón social.
+                      </div>
+                  </div>
+
+                  <div class="form-row">
+                      <div class="form-group col-md-7">
+                          <label for="emailContacto">Correo electrónico:</label>
+                          <input type="email" class="form-control" id="emailContacto"
+                              placeholder="email@example.com" required>
+                          <div class="invalid-feedback">
+                              Por favor, ingrese un correo electrónico válido.
+                          </div>
+                      </div>
+
+                      <div class="form-group col-md-5">
+                          <label for="telContacto">Teléfono de contacto:</label>
+                          <input type="tel" class="form-control" id="telContacto" placeholder=" Teléfono"
+                              maxlength="10" pattern="[0-9]{10}" required>
+                          <div class="invalid-feedback">
+                              Por favor, ingrese un número de teléfono válido.
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="dirContacto">Dirección:</label>
+                      <input type="text" class="form-control" id="dirContacto" required>
+                      <div class="invalid-feedback">
+                          Por favor, ingrese una dirección.
+                      </div>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="refContacto">Referencias:</label>
+                      <input type="text" class="form-control" id="refContacto"
+                          placeholder=" Entre que calles se encuentra ubicado. Lugares de referencia" required>
+                      <div class="invalid-feedback">
+                          Por favor, ingrese alguna referencia.
+                      </div>
+                  </div>
+
+                  <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                          <label for="ciudadContacto">Ciudad</label>
+                          <input type="text" class="form-control" id="ciudadContacto" required>
+                          <div class="invalid-feedback">
+                              Por favor, ingrese su ciudad.
+                          </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                          <label for="estadoContacto">Provincia</label>
+                          <select class="custom-select" id="estadoContacto" required>
+                              <option selected disabled value="">Elegir...</option>
+                              <option>...</option>
+                              <option> Azuay </option>
+                              <option> Bolívar </option>
+                              <option> Cañar </option>
+                              <option> Carchi </option>
+                              <option> Chimborazo </option>
+                              <option> Cotopaxi </option>
+                              <option> El Oro </option>
+                              <option> Esmeraldas </option>
+                              <option> Galápagos </option>
+                              <option> Guayas </option>
+                              <option> Imbabura </option>
+                              <option> Loja </option>
+                              <option> Los Ríos </option>
+                              <option> Manabí </option>
+                              <option> Morona Santiago </option>
+                              <option> Napo </option>
+                              <option> Orellana </option>
+                              <option> Pastaza </option>
+                              <option> Pichincha </option>
+                              <option> Santa Elena </option>
+                              <option> Santo Domingo de los Tsáchilas </option>
+                              <option> Sucumbíos </option>
+                              <option> Tungurahua </option>
+                              <option> Zamora-Chinchipe </option>
+
+                          </select>
+                          <div class="invalid-feedback">
+                              Por favor, seleccione un estado.
+                          </div>
+                      </div>
+
+                      <div class="col-md-3 mb-3">
+                          <label for="cpContacto">CP</label>
+                          <input type="text" class="form-control" id="cpContacto" maxlength="5" pattern="[0-9]{5}"
+                              required>
+                          <div class="invalid-feedback">
+                              Por favor, ingrese su código postal.
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="textContacto">¡Cuéntanos tu idea!</label>
+                      <textarea class="form-control" id="textContacto" rows="5" placeholder="Desarrolla tu idea."
+                          required></textarea>
+                      <div class="invalid-feedback">
+                          Por favor, cuéntanos tu idea. Queremos leerte.
+                      </div>
+                  </div>
+
+                  <div class="form-group">
+                      <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                          <label class="form-check-label" for="invalidCheck">
+                              He leído los términos y condiciones.
+                          </label>
+                          <div class="invalid-feedback">
+                              Debes estar de acuerdo para enviar el formulario.
+                          </div>
+
+                          <br>
+                          <a target="_blank" class="small text-muted ">Términos y Condiciones</a>
+                          <br>
+
+                      </div>
+                  </div>
+                  <button class="btn btn-info" type="Enviar">Enviar</button>
+              </form>
+          </div>
+          <div class="text-center mt-5">
+              <h2 class="fuente-titulo"> Ubicación </h2>
+              <p> Calle Ambato, Quito</p>
+              <p>¿Tienes dudas?</p>
+              <p>Llámanos al número 593 999999999</p>
+              <p>Horarios: Lunes a Viernes 9:00 am a 7:00 pm</p>
+              <!-- MAPA CON LA UBICACIÓN -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7875332920307!2d-78.51926862624953!3d-0.22508439977269942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a28366b3d81%3A0xc6029256689ed873!2sInstituto%20Superior%20Tecnol%C3%B3gico%20Yavirac!5e0!3m2!1ses!2sec!4v1702644254553!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </div>
+  </div>
+</div>

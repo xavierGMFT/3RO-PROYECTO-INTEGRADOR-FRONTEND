@@ -1,0 +1,25 @@
+/* FUENTES DE LETRA */
+.fuente-titulo{
+  font-family: 'Perpetua Titling MT';
+}
+
+.fuente-texto{
+  font-family: "Candara";
+}
+
+.contacto{
+  padding-bottom: 2.5rem;
+}
+
+.formulario-contacto{
+  background-color: #e2ecec;
+  padding-bottom: 1rem;
+  border-radius: 10px;
+  padding-top: 0.2rem;
+  max-width: 800px;
+}
+
+iframe {
+  max-width: 100%;
+  height: auto;
+}

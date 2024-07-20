@@ -1,0 +1,29 @@
+<section class="section">
+  <div class="container">
+    <h2>Carrito de compras</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Precio</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody *ngIf="cartItems.length > 0">
+        <tr *ngFor="let item of cartItems">
+          <td>{{ item.titulo }}</td>
+          <td>{{ item.precio | currency }}</td>
+          <td>
+            <button (click)="removeFromCart(item)">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p *ngIf="cartItems.length === 0">El carrito está vacío.</p>
+    <h3 *ngIf="cartItems.length > 0" [ngStyle]="{'color': getTotalPrice() < 200 ? 'green' : 'red'}">
+      Total: {{ getTotalPrice() | currency }}
+    </h3>
+  </div>
+</section>
+
+

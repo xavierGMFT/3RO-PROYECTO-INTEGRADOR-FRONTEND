@@ -1,0 +1,20 @@
+<div class="container mb-4">
+  <div class="row">
+    <div class="col-4 offset-md-4 text-center">
+      <div class="product-card">
+        <div class="card-banner">
+          <figure class="product-banner img-holder" style="--width: 448; --height: 470;">
+            <img [src]="product?.imagen" width="448" height="470" loading="lazy" class="img-cover">
+          </figure>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">{{ product?.titulo | uppercase}}</h3>
+          <span class="price">Precio: {{ product?.precio | currency}}</span>
+          <h3>{{ product?.descripcion}}</h3>
+          <div class="text-center">
+            <a routerLink="/pages/tienda" class="btn btn-outline-primary btn-block mt-4">Regresar</a>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

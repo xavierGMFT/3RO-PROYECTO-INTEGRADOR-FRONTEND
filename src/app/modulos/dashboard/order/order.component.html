@@ -1,0 +1,38 @@
+<div class="container mt-4">
+  <nav>
+  <hr>
+  </nav>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <h2>Cotizaciones</h2>
+      <!-- <button class="btn btn-outline-secondary btn-sm mb-4" routerLink="/dashboard/order-nueva"><i class="fa fa-plus"></i> Nuevo</button> -->
+    </div>
+  </div>
+  <div class="container" *ngIf="!listaVacia">
+    <table class="table text-center">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Usuario</th>
+            <th scope="col">Total</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let ordenes of order">
+            <td>{{ordenes.id}}</td>
+            <td>{{ordenes.userName}}</td>
+            <td>{{ordenes.price}}</td>
+            <td><button class="btn btn-outline-primary" routerLink="/dashboard/order-detalle/{{ordenes.id}}"><i class="fa fa-eye"></i></button></td>
+            <td><button class="btn btn-outline-warning" routerLink="/dashboard/order-editar/{{ordenes.id}}">Edit</button></td>
+            <td><button class="btn btn-outline-danger" (click)="ordenes.id !== undefined ? borrar(ordenes.id) : null"><i class="fa fa-trash"></i></button></td>
+
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  <div class="container" *ngIf="listaVacia">
+    <div class="p-3 text-center"><h2>{{listaVacia}}</h2></div>
+  </div>

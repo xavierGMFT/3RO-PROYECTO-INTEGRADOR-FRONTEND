@@ -1,0 +1,23 @@
+<div class="container mt-4">
+<div class="container">
+  <div class="row mt-5" *ngIf="producto">
+      <div class="col-md-4 mx-auto">
+          <div class="card" style="width: 18rem;">
+              <div class="card-header text-center">
+                <h1>Producto</h1>
+              </div>
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>ID: </b>{{producto.id}}</li>
+                  <li class="list-group-item"><b>Nombre: </b>{{producto.nombre}}</li>
+                  <li class="list-group-item"><b>Descripcion:</b></li>
+                  <li class="list-group-item"><b></b>{{producto.descripcion}}</li>
+              </ul>
+              <div class="card-footer">
+                  <button class="btn btn-outline-danger btn-block" (click)="volver()"><i
+                          class="fas fa-arrow-alt-circle-left"></i> Volver</button>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>

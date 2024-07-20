@@ -1,0 +1,61 @@
+/***************************** Form de Inicio de Sesión ****************************/
+
+.inicio{
+  background-color: #e2ecec;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: auto;
+  width: 80%;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.formulario{
+  padding: 30px;
+}
+
+.tituloI{
+  padding: 10px;
+  background-color: rgba(78, 53, 53, 0.4);
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.entrar{
+  background-color: rgba(78, 53, 53, 0.4);
+  color: white;
+  width: 40%;
+  margin-bottom: 20px;
+  padding: 2px;
+}
+
+.entrar:hover{
+  background-color: black;
+  color: white;
+}
+
+.linkrecordar{
+  display: block;
+  text-decoration: none;
+  color: #90adb6;
+}
+
+.linkrecordar:hover{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.btnCrearCuenta{
+  background-color: rgba(78, 53, 53, 0.4);
+  color: white;
+  width: 60%;
+  margin-top: 20px;
+  padding: 3px;
+}
+
+.btnCrearCuenta:hover{
+  background-color: black;
+  color: white;
+}
